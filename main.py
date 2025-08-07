@@ -20,7 +20,7 @@ def run_data_quality_checks(df):
     return results
 
 if __name__ == '__main__':
-    df = pd.read_csv('./data/fifa21.csv')
+    df = pd.read_csv('./src/data/fifa21.csv')
     results = run_data_quality_checks(df)
     for r in results:
         print(r)
