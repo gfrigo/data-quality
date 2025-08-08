@@ -1,11 +1,11 @@
 import pandas as pd
-from dimensions.accuracy import check_accuracy
-from dimensions.completeness import check_completeness
-from dimensions.consistency import check_consistency
-from dimensions.reliability import check_reliability
-from dimensions.timeliness import check_timeliness
-from dimensions.uniqueness import check_uniqueness
-from dimensions.usefulness import check_usefulness
+from src.dimensions.accuracy import check_accuracy
+from src.dimensions.completeness import check_completeness
+from src.dimensions.consistency import check_consistency
+from src.dimensions.reliability import check_reliability
+from src.dimensions.timeliness import check_timeliness
+from src.dimensions.uniqueness import check_uniqueness
+from src.dimensions.usefulness import check_usefulness
 
 def run_data_quality_checks(df):
     countries = ['Argentina', 'Brazil', 'Portugal', 'Belgium', 'Slovenia', 'France', 'Germany', 'Spain', 'England']
